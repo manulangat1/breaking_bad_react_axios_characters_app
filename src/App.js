@@ -16,14 +16,13 @@ const  App = () => {
 
   useEffect(() => {
     const fetchItems  = async () => {
-      const result = await axios.get(`https://www.breakingbadapi.com/api/characters`)
+    const result = await axios.get(`https://www.breakingbadapi.com/api/characters`)
       // console.log(result.data)
-      setItems(result.data)
-      setIsLoading(false)
+      console.log(result.data)
+    setItems(result.data)
+    setIsLoading(false)
     }
     fetchItems()
-    console.log(items)
-    console.log(isLoading)
   },[])
   return (
     <main>
