@@ -1,4 +1,10 @@
 // utility classses
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
 .container{
     max-width: 1200px;
     margin:auto;
@@ -7,7 +13,36 @@ img{
     width: 50px;
     height:150px
 }
+
+
+
 header{
     background: #181818;
     color:#fff;
+    padding:2rem;
+
+    .grids{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        span{
+            color: blueviolet;
+        }
+    }
+}
+
+
+.maps{
+    min-height: 80vh;
+    padding:2rem;
+}
+
+
+
+// footer class
+footer{
+    text-align: center;
+    padding: 1rem;
+    background: #181818;
+    color: #f5f5f5;
+
 }
